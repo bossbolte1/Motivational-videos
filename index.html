@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motivational Videos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC0Qx4PpK51xhePLRLNyZ_VwFc8aXnAMQqyKZ1ETY_9ck3rdvzGlv6Ngcs&s=10'); /* Specify the path to your background image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+    }
+    header {
+      background-color: #ADD8EC;
+      color: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .video {
+      margin-bottom: 20px;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .prev, .next {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .prev:hover, .next:hover {
+      background-color: #45a049; /* Darker green */
+    }
+  </style>
+  <style>
+    #quote {
+      font-size: 24px;
+      color: #333; /* Dark gray text color */
+    }
+  </style>
+</head>
+<body>
+	<video controls autoplay>
+	<script src="script.js"></script>
+	  <div id="quote"></div>
+  <header>
+    <h1>Motivational Videos</h1>
+  </header>
+  <div class="container">
+    <div class="video">
+      <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JUST DO IT BROO</h2>
+      <video controls>
+        <source src="your_video_link_here.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="buttons">
+      <button class="prev">Previous</button>
+      <button class="next">Next</button>
+    </div>
+  </div>
+
+  <script>
+    const videos = [
+      "https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F424045203_1761122774357136_7009063954523704428_n.mp4%3F_nc_ht%3Dscontent-fra5-1.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3DF_Pi6oXb4NwAX-am7aJ%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfCL9rei_nFOYMSfzR_x8espqY4W7DeuzRCCeb0i3IvMoQ%26oe%3D65D4019E%26_nc_sid%3D2999b8",
+      "https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F316755621_431615372628589_1627904750651601992_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D101%26_nc_ohc%3DeOloPf6Y2NMAX9i3gui%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfAKc3Ligd-fRrm1XOA2TnRlz5dUmla1EBPt44P03MgJAQ%26oe%3D65D42BFF%26_nc_sid%3D10d13b",
+     "https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft66.30100-16%2F323901412_370169062509366_2032877072240258960_n.mp4%3F_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D106%26_nc_ohc%3DmTw74cn6X7AAX9m-u1k%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAy1nckS93duNGpaN3pHwZ_bcE0w1Ox3aeuOPVsXEHPBQ%26oe%3D65D40757%26_nc_sid%3D2999b8",
+"https://dl1.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F317169188_3630577637170949_7404693277817705622_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3DWsAwEF4lYkMAX9QOv0a%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfAxj3qXqGRdzgbDY4kBwAQ_vnULXn4GIWY_v3fDLgiaaQ%26oe%3D65D3F3F0%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F169667080_866848311795401_2297582453883699621_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3DHdeN7ABPnT0AX_KT5ro%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfCh6maPL7ajLYF_d7pvru-Qs0EobDxEZA5OX2387sMm9A%26oe%3D65D43C9B%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F322317043_925419058829685_8359148535207908516_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DwcYlQBfNIPIAX8ABSVM%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfCbGrDIQs6sVLlU9uUb7XzfT5UIZIwjzR0cFmQNhwLHCA%26oe%3D65D42170%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F310692046_1115801092913177_9049002341313769596_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3Dpze4vuvoZCgAX8PZvvN%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfDobrO0XexaQzRa8dEsOw12ZyxYfRu5nqP_BYLoiahSxw%26oe%3D65D3C6EE%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft66.30100-16%2F320821760_1184502215855445_7182256207807451198_n.mp4%3F_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D109%26_nc_ohc%3DQxTThG0Uao8AX-NdSzM%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAUfp4kwpQ0r2t3Ip2vih7N4WViJj6LwhZjaaUsFXdOzQ%26oe%3D65D3BE0D%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F323109423_2744661072351519_2657634364163709482_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3DP8aX85gwaf0AX_2KPm9%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfB-LkCMyfZpNy8xpdZvkyu1H4_p4K1tPtDn_PY2NzPibg%26oe%3D65D3BEAB%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F320802235_1846022249179508_985681392698675395_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D108%26_nc_ohc%3D8MDG_rSFtNcAX_Yl6pa%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfAsS0Ko7oenHAlMtTI7R7O5jT5BQ9yP4UcrJM6ucyZh1Q%26oe%3D65D3AB6A%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F316280675_305293679207557_8378177992037146362_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D101%26_nc_ohc%3D-xmcXkaMTUwAX9V5ZKw%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfBF6rgqalqMk0aWWNGmmaSNH783tMSvAJtJ9aNO4DrgTA%26oe%3D65D41165%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F317552152_928338258656282_6291399744900735033_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D102%26_nc_ohc%3Dq6oiyre5xGkAX-wiIxr%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfAy3nR8oK_0c4_XF9EsyjawshCpXPxucZ0UlsLSzOgSwQ%26oe%3D65D39B1C%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F43686302_2106556916365240_648084380797611243_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D104%26_nc_ohc%3Dp9JsTLWRlZ4AX81a8q_%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfA8hxFTqD6zCMMX0RNOhrKT6urMtGxQRvBY7YC4n5vhVQ%26oe%3D65D3D33C%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft50.2886-16%2F427871315_310120558317854_3763284180540134603_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D102%26_nc_ohc%3DSK2qdqZRUfoAX8oQaQX%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfAYYN3Qge-1zxkEFec1dBBIYz9g3fB_rALDNnbJux4iJg%26oe%3D65D4377B%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F311333160_358782537053703_1503975738156364310_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3DHhJdIRzR2XIAX9JZKdn%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfCBxwifpVzhdw6MekQRIu0_OsEC4_Ms1ZVgD50wPa1_Hw%26oe%3D65D43060%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F381180979_217552778046108_7355673547176827614_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3DBS-GCzo5UZ0AX9nlOII%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfBl0mtjDy9hSc3KHL8vpOGCUcmJQrFtPzkkxjAgbfrUmw%26oe%3D65D3FD9E%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F332295793_1083575136209332_328190529106939779_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D104%26_nc_ohc%3DEqsW9po8_lcAX9EimPQ%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfBIVCKzcI3jViOOmEcGL1IQhxjtwiO-FzG2AMsFTMH-fA%26oe%3D65D43DD2%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F122236744_1363974917656587_3377753336515305568_n.mp4%3F_nc_ht%3Dscontent-mxp1-1.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3DcnaleJ6zDBIAX9igksl%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAFw1jfCRjZixrQB1_isrx1spqIH4B_kaePaihBAxdHLg%26oe%3D65D3C6B6%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F316764655_1407244463515500_2107580752951161507_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3DS_wZ1FRDECwAX8bz-n1%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAu6X7nHlWiF2O51xUzlxbDCFDmeR-TiB7d7dKbKI0HHQ%26oe%3D65D41CCA%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-1.cdninstagram.com%2Fv%2Ft66.30100-16%2F319250495_1310425446317231_5864009991732584109_n.mp4%3F_nc_ht%3Dscontent-ord5-1.cdninstagram.com%26_nc_cat%3D111%26_nc_ohc%3DY7y3YqCOvTIAX-six8M%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfDEZenTEVOjZqSle1u1dwwH6IXLDJCU06j5IoB_yHabxQ%26oe%3D65D43607%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F121459993_1130029257991463_4944460770421777266_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D111%26_nc_ohc%3DBdNxkUNaGykAX93UBXD%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfC93nu8jgbv8vYM84MexkKnUfL8_1OCZyath4kAlVoT5Q%26oe%3D65D40D48%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F169299773_908129397764935_2570674509473376654_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D107%26_nc_ohc%3DKD4dunhJWKMAX8CgZjl%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfDTxrilicWA8LFqZGc2d9ihGtFkxr4zIzfxJrDCcbk_mA%26oe%3D65D414A7%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F320311062_338753192321188_4864625577973377341_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D104%26_nc_ohc%3DFaJzcVYjgBMAX9ynnHB%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfA0ooGUhEray0NUahBenRPYKBTfx-Rb0j6UuqnPq-P2-g%26oe%3D65D3C6D8%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F122269449_7467190446703552_7572692727212865562_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D104%26_nc_ohc%3DuOeGm4nKSkwAX-K6jMa%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfA6Qdl5d4rQNh3T6F_UADmg6zeNRYS05xOGFJcvUiF3Ww%26oe%3D65D427ED%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F318851870_2367831623401347_2707483956926280079_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3DhGzwga1le1YAX9WqEEn%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfCi54Kx02nJyxv1SevKyXMITbe1SioPBduq5RfGaOt8bw%26oe%3D65D3F413%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F318859328_287887407656459_4165225219529216650_n.mp4%3F_nc_ht%3Dscontent-yyz1-1.cdninstagram.com%26_nc_cat%3D111%26_nc_ohc%3DZ5jnzTOgGbkAX8NFF50%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAP030zDaCR7Hf06OtTV_eQfc7fS8plHIJunOw4LuuWCA%26oe%3D65D41E45%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F120089909_1115680482767340_4986152143665329137_n.mp4%3F_nc_ht%3Dscontent-gru1-2.cdninstagram.com%26_nc_cat%3D100%26_nc_ohc%3Ddi-WfZMria4AX8mzjpL%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfB4NnD4g8IWPUg73jtXiRiE8AqwnEuzsiY3jYq0vHVMew%26oe%3D65D3AC12%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F322285209_689424013262909_8388734253195169631_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3Dz6cAHiQDW9oAX-nC5RJ%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfBT1Hd_tf86q-sacd3n-8sBDET5sIPhhnSlCewdPDbK0Q%26oe%3D65D3B071%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F320657458_737781688447675_6731444905281253791_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D107%26_nc_ohc%3DV1LQ3ad8R6YAX9MtyMf%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAxXNXxVt7TOWIGeJ7hzGwWYKb3twYI23W9JHeKlztmtw%26oe%3D65D4282A%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F41816516_296498356782939_8320889345631373380_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D103%26_nc_ohc%3D_XH1n42Bt9QAX91SubO%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfDkEtfD2QIoymWIlwCDcrp7uUuuzHXWdpHzXLGv5cwaCg%26oe%3D65D3CEED%26_nc_sid%3D2999b8",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent.cdninstagram.com%2Fv%2Ft66.30100-16%2F318671289_7206172822810242_1893141788780998253_n.mp4%3F_nc_ht%3Dscontent.cdninstagram.com%26_nc_cat%3D106%26_nc_ohc%3DYnAgTL9kqKYAX-_17pk%26edm%3DAPs17CUBAAAA%26ccb%3D7-5%26oh%3D00_AfB0zMLM4uSGibZHi2bas3tbrCc4xIXagwtGfrRhguzVag%26oe%3D65D43C74%26_nc_sid%3D10d13b",
+"https://dl2.instavideosave.com/?url=https%3A%2F%2Fscontent-ord5-2.cdninstagram.com%2Fv%2Ft66.30100-16%2F318637881_6574104602695517_955229995516113563_n.mp4%3F_nc_ht%3Dscontent-ord5-2.cdninstagram.com%26_nc_cat%3D105%26_nc_ohc%3D36prYRj8ibMAX_X8Qcl%26edm%3DAP_V10EBAAAA%26ccb%3D7-5%26oh%3D00_AfAgBC9w4zksQv2cBI8k530f10F15Ko-lrzGvqugIXDZTA%26oe%3D65D3D842%26_nc_sid%3D2999b8",
+ // Add more video links as needed
+      
+    ];
+
+    let currentVideoIndex = 0;
+    const videoPlayer = document.querySelector("video");
+
+    function loadVideo(index) {
+      if (index < 0 || index >= videos.length) {
+        return;
+      }
+      videoPlayer.src = videos[index];
+      videoPlayer.load();
+    }
+
+    document.querySelector(".prev").addEventListener("click", function() {
+      currentVideoIndex = (currentVideoIndex - 1 + videos.length) % videos.length;
+      loadVideo(currentVideoIndex);
+    });
+
+    document.querySelector(".next").addEventListener("click", function() {
+      currentVideoIndex = (currentVideoIndex + 1) % videos.length;
+      loadVideo(currentVideoIndex);
+    });
+
+    // Load initial video
+    loadVideo(currentVideoIndex);
+  </script>
+<script src="https://cdn.logwork.com/widget/text.js"></script>
+<a href="https://logwork.com/current-time-in-balasore-india-odisha" class="clock-widget-text" data-timezone="Asia/Kolkata" data-language="en">Balasore, India, Odisha</a>
+<h1 style="text-align:center;">TIME CHALA JAA RAHA </h1>
+<h2 style="text-align:center;">U HAVE TO DO IT FOR YOURSELF</h2>
+<h3 style="text-align:center;">IT'S YOUR LIFE CHANGE IT</h3>
+  <script>
+    const quotes = [
+      "The only way to do great work is to love what you do. - Steve Jobs",
+      "Believe you can and you're halfway there. - Theodore Roosevelt",
+      "Your limitation—it's only your imagination.",
+      "Push yourself, because no one else is going to do it for you.",
+      "Great things never come from comfort zones.",
+      "Dream it. Wish it. Do it.",
+      "Success doesn’t just find you. You have to go out and get it.",
+      "The harder you work for something, the greater you’ll feel when you achieve it.",
+      "Dream bigger. Do bigger.",
+      "Don’t stop when you’re tired. Stop when you’re done.",
+      "Wake up with determination. Go to bed with satisfaction.",
+      "Do something today that your future self will thank you for."
+      
+    ];
+
+    const quoteElement = document.getElementById('quote');
+
+    function displayRandomQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      quoteElement.textContent = quotes[randomIndex];
+    }
+
+    displayRandomQuote(); // Display initial quote immediately
+    setInterval(displayRandomQuote, 5000); // Change quote every 5 seconds
+  </script>
+</body>
+</html>
